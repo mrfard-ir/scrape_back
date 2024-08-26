@@ -108,8 +108,7 @@ async function openBrowser(proxy) {
     const args = [...baseArgs, ...additionalArgs];
     // Define the browser
     const browser = await puppeteer.launch({
-        headless: false,
-        defaultViewport: false,
+        headless: true,
         args: args,
         executablePath: executablePath(),
     });
